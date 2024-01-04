@@ -1,0 +1,915 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text: #777777;
+    --black: #000000;
+    --white: #f4f4f4;
+    --bg-lead: #808080;
+    --bg-other: #e2e2e2;
+}
+
+/* Pirata title */
+
+.pirata {
+    font-size: 86px;
+    letter-spacing: 3px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 400;
+    font-family: "Pirata One";
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--black);
+}
+
+/* Readex text */
+
+.readex-text {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--text);
+    font-weight: 300;
+    font-family: "Readex Pro";
+    text-align: left;
+    word-spacing: 5px;
+    margin-top: 3vh;
+}
+
+.readex-h3 {
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 700;
+    font-family: "Readex Pro";
+    border-top: 3px solid var(--black);
+    padding-top: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.readex-h4 {
+    font-size: 19px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 500;
+    font-family: "Readex Pro";
+}
+
+/* General button */
+
+.btn {
+    padding: 20px 55px;
+    letter-spacing: -1px;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+/* Header section*/
+
+header {
+    max-width: 1181px;
+    margin: 5vh auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+}
+
+nav li {
+    padding: 10px;
+    margin-right: 75px;
+}
+
+nav li:first-child a {
+    margin-right: 40px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+nav a {
+    color: var(--text);
+    font-size: 18px;
+}
+
+nav a:hover {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.lead {
+    background-color: var(--bg-lead);
+}
+
+/* Hero section */
+
+.main-hero {
+    max-width: 1181px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-hero div {
+    width: 50%;
+}
+
+.main-hero span {
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 700;
+    font-family: "Readex Pro";
+    margin-left: 2vw;
+}
+
+.main-hero section {
+    width: 65%;
+    margin: 7vh 0;
+}
+
+.im-overlay {
+    position: relative;
+}
+
+.im-overlay img {
+    height: 100%;
+    margin-left: 10%;
+    border-radius: 0% 0% 50% 50% / 10% 10% 20% 17%;
+}
+
+.im-overlay .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgba(45, 34, 148, 0.9999999999999999) 0%, rgba(45, 34, 148, 0) 72%, rgba(45, 34, 148, 0) 100%);
+}
+
+/* About section */
+
+.main-about {
+    margin: 5vh auto;
+}
+
+.main-about__heading {
+    background-color: var(--black);
+    text-align: center;
+    padding: 7vh;
+}
+
+.main-about__heading>p {
+    width: 40%;
+    margin: 4vh auto 8vh;
+    text-align: center;
+    word-spacing: 2.5px;
+}
+
+.main-about__heading .btn {
+    border: 3px solid var(--white);
+}
+
+h2.pirata {
+    color: var(--black);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+/* Courses section */
+
+.main-courses {
+    max-width: 1200px;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-courses section {
+    width: 33%;
+}
+
+h3.pirata {
+    font-size: 74px;
+    line-height: 71px;
+    margin-bottom: 7vh;
+}
+
+.main-courses__courses {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-courses__courses div {
+    width: 50%;
+    padding: 20px;
+}
+
+.main-courses__courses .readex-text {
+    margin-top: 1vh;
+}
+
+.main-courses__courses img {
+    width: 48px;
+    height: 48px;
+    padding: 7px;
+    background-color: var(--bg-lead);
+    border-radius: 8px;
+}
+
+/* Education section */
+
+.main-education {
+    text-align: center;
+    margin: 15vh auto;
+}
+
+.main-education .pirata {
+    font-size: 107px;
+    letter-spacing: 3px;
+    line-height: 102px;
+    text-transform: uppercase;
+    color: var(--black);
+    max-width: 950px;
+    margin: 5vh auto;
+}
+
+.main-education .readex-h4 {
+    font-size: 18px;
+}
+
+/* Graduates section */
+
+.main-graduates img {
+    width: 100%;
+}
+
+.main-graduates section {
+    margin-left: 7vw;
+    display: flex;
+}
+
+.main-graduates section h4 {
+    width: 50%;
+    margin: 5vh 1vw;
+}
+
+.main-graduates p {
+    width: 35%;
+    margin-top: 5vh;
+    margin-bottom: 55px;
+}
+
+/* Blog section */
+
+.main-blog {
+    background-color: var(--black);
+}
+
+.main-blog img {
+    width: 100%;
+}
+
+.main-blog__blogs {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 8vh 0 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-blog__blogs div {
+    width: 48%;
+}
+
+.main-blog__blogs h3 {
+    color: var(--white);
+    border-top: 3px solid var(--white);
+    margin-top: 5vh;
+}
+
+.main-blog__blogs h4 {
+    color: var(--white);
+}
+
+.main-blog__blogs p {
+    margin-bottom: 6vh;
+}
+
+.main-blog .btn {
+    border: 3px solid var(--white);
+}
+
+/* FAQ section */
+
+.main-FAQ {
+    max-width: 780px;
+    margin: 10vh auto;
+}
+
+.main-FAQ h4 {
+    font-size: 154px;
+    letter-spacing: 6px;
+    line-height: 147px;
+    color: var(--white);
+    margin-bottom: 5vh;
+}
+
+.main-FAQ div {
+    background-color: var(--bg-other);
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2.5vw;
+    margin-bottom: 4vh;
+}
+
+.main-FAQ p {
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.main-FAQ div img {
+    height: 100%;
+}
+
+/* Reviews section */
+
+.main-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-reviews>img {
+    width: 20vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.main-reviews__reviews {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-reviews__user {
+    width: 80%;
+    height: 25%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.main-reviews__user div {
+    width: 68%;
+}
+
+.main-reviews__user>img {
+    height: 80%;
+    align-self: center;
+}
+
+.main-reviews__user h5 {
+    display: inline;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Readex Pro";
+    margin-right: 50px;
+}
+
+.main-reviews__user span {
+    display: inline-flex;
+    margin-top: 2vh;
+    gap: 10px;
+}
+
+.main-reviews__user div p {
+    margin-bottom: 5vh;
+}
+
+/* Newsletter */
+
+.main-news {
+    max-width: 1240px;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-news__news {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    align-content: flex-start;
+}
+
+.main-news__news h3 {
+    border-top: none;
+    margin: 0 0 3vh;
+}
+
+.main-news__news section {
+    width: 48%;
+    border: 3px solid var(--black);
+    padding: 30px;
+    height: 32%;
+}
+
+.main-news__news p {
+    margin-top: 1vh;
+}
+
+.main-news__news__black {
+    background-color: var(--black);
+}
+
+.main-news__news__black h3 {
+    color: var(--white);
+}
+
+.main-news__news__black h4 {
+    color: var(--white);
+}
+
+.main-news__form {
+    width: 37%;
+}
+
+h4.pirata {
+    font-size: 99px;
+    letter-spacing: 4px;
+    line-height: 94px;
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 3vh;
+}
+
+.main-news__form input:not(.btn),
+textarea {
+    width: 100%;
+    background-color: var(--bg-other);
+    margin: 15px 0;
+    border: none;
+    padding: 18px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #232323;
+    font-family: "Lato";
+    border-radius: 5px;
+}
+
+input.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.main-news__form textarea {
+    margin-bottom: 10vh;
+    height: 13vh;
+}
+
+::placeholder {
+    color: #232323;
+    opacity: 1;
+}
+
+/* Footer section */
+
+footer {
+    background-color: var(--black);
+    padding: 10vh 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5.pirata {
+    width: 25%;
+    font-size: 85px;
+    letter-spacing: 3px;
+    line-height: 81px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 400;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.footer-content h3.readex-h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: var(--white);
+    font-weight: 700;
+    font-family: "Readex Pro";
+    margin-top: 0;
+    padding-top: 0;
+    text-transform: capitalize;
+}
+
+.footer-content div {
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-family: "Lato";
+    text-align: left;
+}
+
+.footer-content div .footer-content__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-content__links ul {
+    width: 24%;
+}
+
+.footer-content__links a {
+    color: #777777;
+}
+
+footer h6.readex-h3 {
+    font-size: 21px;
+    line-height: 50px;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        max-width: 1181px;
+        margin: 5vh 1vw;
+    }
+
+    nav li {
+        padding: 10px;
+        margin-right: 1vw;
+    }
+
+    nav li:first-child a {
+        margin-right: 3vw;
+    }
+
+    /* Hero section */
+
+    .main-hero {
+        margin: 0 1vw;
+    }
+
+    .im-overlay img {
+        height: 100%;
+        margin-left: 10%;
+        border-radius: 0% 0% 50% 50% / 10% 10% 55vw 17%;
+    }
+
+    /* Courses section */
+
+    .main-courses {
+        margin: 15vh 1vw;
+    }
+
+    /* Graduates section */
+
+    .main-graduates div {
+        width: 50%;
+    }
+
+    .main-graduates section h4 {
+        width: 50%;
+    }
+
+    .main-graduates p {
+        width: 80%;
+    }
+
+    /* Blog section */
+
+    .main-blog__blogs {
+        margin: 0 2vw;
+    }
+
+    /* Revies section */
+
+    .main-reviews__user {
+        height: 35%;
+    }
+
+    /* Newsletter */
+
+    .main-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-news__news {
+        margin-bottom: 5vh;
+    }
+
+    .main-news__form {
+        width: 55%;
+    }
+
+    /* Footer section */
+
+    footer {
+        padding: 10vh 2vw;
+    }
+
+    h5.pirata {
+        width: 20%;
+        font-size: 70px;
+    }
+
+    .footer-content div {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    /* FAQ section */
+
+    .main-FAQ {
+        margin: 10vh 5vw;
+    }
+
+    /* Footer section */
+
+    .footer-content {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h5.pirata {
+        width: 70%;
+        margin-left: 25vw;
+    }
+
+    .footer-content h3.readex-h3 {
+        margin-left: 32vw;
+    }
+
+    .footer-content div {
+        width: 90%;
+        text-transform: capitalize;
+        font-size: 21px;
+        letter-spacing: -1px;
+        line-height: 50px;
+        font-family: "Lato";
+        text-align: left;
+    }
+
+    .footer-content div .footer-content__links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-content__links ul {
+        width: 24%;
+    }
+
+    .footer-content__links a {
+        color: #777777;
+    }
+
+    footer h6.readex-h3 {
+        font-size: 21px;
+        line-height: 50px;
+        color: var(--white);
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 800px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Hero section */
+
+    .im-overlay img {
+        height: 100%;
+        margin-left: 10%;
+        border-radius: 0% 0% 50% 50% / 0% 0% 100% 17%;
+    }
+
+    .im-overlay .overlay {
+        visibility: hidden;
+    }
+
+    /* Graduates section */
+
+    .main-graduates section {
+        margin: 5vh auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .main-graduates section h4 {
+        width: 90%;
+        margin: 2vh 1vw;
+    }
+
+    .main-graduates div {
+        width: 90%;
+        margin: 0 1vw;
+    }
+
+    .main-graduates p {
+        width: 90%;
+        margin-top: 5vh;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: 'Readex Pro', sans-serif;
+    }
+
+    /* Hero section */
+
+    .main-hero {
+        margin: 0 5vw;
+    }
+
+    /* About section */
+
+    .main-about__heading>p {
+        width: 80%;
+    }
+
+    /* Courses section */
+
+    .main-courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-courses section {
+        width: 90%;
+        margin-bottom: 10vh;
+    }
+
+    .main-courses__courses {
+        width: 90%;
+    }
+
+    /* Graduates section */
+
+    .main-graduates img {
+        width: 100%;
+    }
+
+    .main-graduates section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-graduates section h4 {
+        width: 90%;
+    }
+
+    .main-graduates p {
+        width: 90%;
+    }
+
+    /* Blog section */
+
+    .main-blog__blogs {
+        flex-direction: column;
+    }
+
+    .main-blog__blogs div {
+        width: 95%;
+        margin: 5vh auto;
+    }
+
+
+    /* FAQ section */
+
+    .main-FAQ div {
+        width: 95%;
+    }
+
+    /* Reviews section */
+
+    .main-reviews__reviews {
+        width: 85%;
+    }
+
+    .main-reviews__user {
+        width: 85%;
+        height: 50%;
+    }
+
+    .main-reviews__user div {
+        width: 65%;
+    }
+
+    .main-reviews__user>img {
+        height: 50%;
+        align-self: center;
+    }
+
+    /* Newsletter */
+
+    .main-news__news {
+        width: 95%;
+    }
+
+    .main-news__form {
+        width: 95%;
+    }
+
+    /* Footer section */
+
+    h5.pirata {
+        width: 90%;
+
+    }
+
+    .footer-content h3.readex-h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer-content div {
+        width: 95%;
+        font-size: 19px;
+    }
+
+    .footer-content div .footer-content__links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer-content__links ul {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .btn{
+        position: absolute;
+        margin-top: 6vh;
+    }
+}
